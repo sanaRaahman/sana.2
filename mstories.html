@@ -3,41 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copyright Free Moral Stories for YouTube & Kids - Sana's Perspective</title>
+    <title>Islamic Stories with Science & Hadith | Sana's Perspective</title>
 
-    <!-- 1. SEO & Copyright-Free Meta Tags -->
-    <meta name="author" content="Sana">
-    <meta name="description" content="100% Free & Copyright Free Moral Stories for YouTube Creators, Voiceover Artists & Kids. Read and use high-quality Hindi Moral Stories for animation & educational videos without copyright strikes.">
-    <meta name="keywords" content="copyright free moral stories for youtube, free to use kids stories for voiceover, no copyright hindi stories, reusable moral stories in hindi, copyright free scripts for animation, royalty free hindi kahaniyan, fair use kids stories hindi, free content for video creators, copyright free bedtime stories, bacchon ki kahaniyan">
+    <!-- SEO & Copyright-Free Meta Tags -->
+    <meta name="author" content="Sana Rahman">
+    <meta name="description" content="Read 100% Free Copyright-Free Islamic Moral Stories, Hadith Waqie, and Scientific Facts combined in Hindi. Perfect for YouTube creators, animators, and kids learning.">
+    <meta name="keywords" content="islamic stories with science, hadith aur science, quran and science stories in hindi, copyright free islamic moral stories, science in islam for kids, no copyright kahaniyan, bacchon ki islamic kahaniyan, youtube shorts islamic scripts, sana perspective islamic stories">
     <meta name="robots" content="index, follow">
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f9ff;
+            background-color: #f0fdf4;
             margin: 0;
             padding: 15px;
             text-align: center;
         }
 
-        /* 📢 YouTube Creators Disclaimer Box */
+        /* 🎬 Top YouTube Channel Header Banner */
+        .channel-header {
+            background: linear-gradient(135deg, #1b5e20, #2e7d32);
+            color: white;
+            padding: 20px 15px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-subscribe {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* 📢 YouTube Creators Notice */
         .creator-notice {
-            background-color: #fff3cd;
-            color: #856404;
+            background-color: #e8f5e9;
+            color: #1b5e20;
             padding: 10px 14px;
             border-radius: 8px;
             margin: 12px auto 18px auto;
             max-width: 500px;
             font-size: 13px;
-            border: 1px solid #ffeeba;
+            border: 1px solid #c8e6c9;
             text-align: left;
             line-height: 1.5;
         }
 
-        /* 🎯 2-कॉलम ग्रिड लेआउट (1 लाइन में 2 बटन) */
+        /* 🎯 2-कॉलम ग्रिड लेआउट */
         .story-menu {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* 2 बराबर कॉलम */
+            grid-template-columns: 1fr 1fr;
             gap: 12px;
             max-width: 500px;
             margin: 0 auto;
@@ -46,7 +72,7 @@
 
         .story-btn {
             cursor: pointer;
-            border: 1.5px solid #28a745;
+            border: 1.5px solid #1b5e20;
             border-radius: 16px;
             padding: 12px 10px;
             background: white;
@@ -66,7 +92,7 @@
         .story-btn span {
             font-weight: bold;
             font-size: 13px;
-            color: #28a745;
+            color: #1b5e20;
         }
 
         /* पॉप-अप (Modal Window) */
@@ -99,10 +125,10 @@
         }
 
         .modal-card h3 {
-            color: #28a745;
+            color: #1b5e20;
             margin-top: 0;
             font-size: 20px;
-            border-bottom: 2px solid #c3e6cb;
+            border-bottom: 2px solid #c8e6c9;
             padding-bottom: 8px;
         }
 
@@ -112,14 +138,46 @@
             color: #333;
         }
 
+        /* 🖼️ Kahani ke andar Image ke liye Style */
+        .story-img {
+            width: 100%;
+            max-height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 12px 0;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        }
+
         .moral-box {
             background-color: #e8f5e9;
-            border-left: 4px solid #28a745;
+            border-left: 4px solid #1b5e20;
             padding: 10px;
             margin-top: 15px;
             font-weight: bold;
-            color: #155724;
+            color: #1b5e20;
             border-radius: 4px;
+        }
+
+        /* YouTube Shorts Links Box */
+        .shorts-links-box {
+            margin-top: 15px;
+            padding: 12px;
+            background: #f1f8e9;
+            border-radius: 10px;
+            border: 1px dashed #4caf50;
+            text-align: center;
+        }
+
+        .shorts-btn {
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 4px;
         }
 
         /* 🔊 ऑडियो बटन स्टाइल */
@@ -150,7 +208,7 @@
         .home-btn {
             text-decoration: none;
             color: #ffffff;
-            background: linear-gradient(45deg, #28a745, #20c997);
+            background: linear-gradient(45deg, #1b5e20, #4caf50);
             padding: 10px 22px;
             border-radius: 25px;
             font-weight: bold;
@@ -162,33 +220,42 @@
 </head>
 <body>
 
-    <h1 style="color: #28a745; font-size: 22px;">
-        🦁 Bacchon ki Pyari Moral Stories 🐭
+    <!-- 🎬 Top YouTube Channel Banner & Link -->
+    <div class="channel-header">
+        <h2 style="margin: 0 0 6px 0; font-size: 20px;">🎬 Sana's Perspective</h2>
+        <p style="margin: 0 0 12px 0; font-size: 13px; opacity: 0.9;">Islamic Stories, Hadith & Science par aadharit nayi videos aur Shorts ke liye channel subscribe karein!</p>
+        <a href="APKE_YOUTUBE_CHANNEL_LINK_HERE" target="_blank" class="btn-subscribe">
+            ▶ YouTube Channel Subscribe Karein
+        </a>
+    </div>
+
+    <h1 style="color: #1b5e20; font-size: 22px;">
+        📖 Islamic Stories with Science & Hadith ✨
     </h1>
     
     <p style="font-size: 13px; color: #555; max-width: 600px; margin: 5px auto 10px auto;">
-        Majedar kahaniyan jo bacchon ko acche akhlaq, imaandari aur samajhdaari sikhayein.
+        Sachi aur hidayat se bhari kahaniyan jo bacchon aur badon ko nek rasta dikhayein.
     </p>
 
     <!-- 📢 Notice for YouTube Creators -->
     <div class="creator-notice">
-        📢 <b>For YouTube Creators & Voiceover Artists:</b> Ye sabhi kahaniyan 100% Free & Reusable hain. Aap inka upayog apne YouTube videos, animation ya voiceover ke liye bina kisi copyright strike ke kar sakte hain!
+        📢 <b>For YouTube Creators & Voiceover Artists:</b> Ye sabhi Islamic kahaniyan 100% Free & Reusable hain. Aap inka upayog apne YouTube videos, Shorts ya animation ke liye bina kisi copyright strike ke kar sakte hain!
     </div>
 
-    <!-- 2-कॉलम ग्रिड बटन यहाँ अपने आप बनेंगे -->
+    <!-- 2-कॉलम ग्रिड बटन यहाँ बनेंगे -->
     <div id="buttons-container" class="story-menu"></div>
 
     <!-- Quote Box -->
-    <div style="margin-top: 20px; font-style: italic; color: #555; background: #e8f5e9; padding: 12px; border-radius: 8px; display: inline-block; max-width: 500px; border: 1px solid #c3e6cb;">
-        "Acchi kahaniyan bacchon ki soch ko sahi rasta dikhati hain."
+    <div style="margin-top: 20px; font-style: italic; color: #1b5e20; background: #e8f5e9; padding: 12px; border-radius: 8px; display: inline-block; max-width: 500px; border: 1px solid #c8e6c9;">
+        "Deen ki baatein aur achhi kahaniyan dil ko sakoon deti hain."
     </div>
 
     <!-- पॉप-अप Modal -->
     <div id="story-modal" class="modal-overlay">
         <div class="modal-card">
-            <button class="audio-btn" onclick="speakText()">🔊 सुनिए (Audio)</button>
+            <button class="audio-btn" onclick="speakText()">🔊 Suniye (Audio)</button>
             <div id="story-content"></div>
-            <button class="close-btn" onclick="closeModal()">✖ बंद करें</button>
+            <button class="close-btn" onclick="closeModal()">✖ Band Karein</button>
         </div>
     </div>
 
@@ -196,91 +263,77 @@
     <a href="index.html" class="home-btn">🏠 Wapas Home Page par Jayein</a>
 
     <script>
-        // ==========================================
-        //  STEP-BY-STEP डेटा लिस्ट (यहाँ नई कहानी जोड़ें)
-        // ==========================================
+        // ======================================================
+        //  ISLAMIC STORIES DATA
+        // ======================================================
         const myData = [
             {
-                icon: "🦁",
-                title: "Sher aur Chuha",
+                icon: "🐘",
+                title: "Baadshah Abraha aur Haathi",
                 content: `
-                    <h3>Sher aur Chote Chuhe ki Kahani</h3>
-                    <p>Ek baar ek sher so raha tha. Ek chota chuha uske upar koodne laga, jis se sher ki neend khul gayi. Sher ne gusse mein chuhe ko pakad liya. Chuhe ne kaha, "Mujhe chhod do, shayad kabhi main aapke kaam aa jaun." Sher hansa aur use chhod diya.</p>
-                    <p>Kuch dino baad sher ek shikari ke jaal mein phans gaya. Chuhe ne jaal ke dhagon ko apne tez daanton se kaat diya aur sher ki jaan bachaye.</p>
-                    <div class="moral-box">💡 Moral (Seekh): Kisi ko chota samajh kar kamzor mat samjho. Har kisi ki apni ahmiyat hoti hai.</div>
-                `
-            },
-            {
-                icon: "🐦",
-                title: "Pyasa Kauwa",
-                content: `
-                    <h3>Aqlmand Pyasa Kauwa</h3>
-                    <p>Ek kauwe ko bahut pyas lagi thi. Use ek matka mila, lekin usme pani bahut niche tha aur kauwe ki choonch wahan tak nahi pahunch pa rahi thi.</p>
-                    <p>Kauwe ne haar nahi mani. Usne aas-paas se chote-chote kankar uthaye aur ek-ek karke matke mein daal diye. Pani upar aa gaya aur kauwe ne pet bhar kar pani piya.</p>
-                    <div class="moral-box">💡 Moral (Seekh): Jahan chah hai, wahan raah hai. Mehnat aur samajhdaari se har mushkil aasan ho jati hai.</div>
-                `
-            },
-            {
-                icon: "🐶",
-                title: "Lalchi Kutta",
-                content: `
-                    <h3>Lalchi Kutta aur Roti ka Tukda</h3>
-                    <p>Ek kutte ko ek roti ka tukda mila. Woh use muh mein dabaye nadi ke pul se guzar raha tha. Usne nadi ke pani mein apni hi parchhai dekhi.</p>
-                    <p>Kutte ne samjha ki pani mein koi doosra kutta hai jiske paas bhi roti hai. Lalach mein aakar usne doosri roti lene ke liye jaise hi bhaunkna shuru kiya, uski apni roti bhi pani mein gir gayi.</p>
-                    <div class="moral-box">💡 Moral (Seekh): Lalach buri bala hai. Jo paas hai usme khush rehna chahiye.</div>
-                `
-            },
-            {
-                icon: "🐢",
-                title: "Kachhua aur Khargosh",
-                content: `
-                    <h3>Kachhue aur Khargosh ki Daud</h3>
-                    <p>Khargosh ko apni tez chaal par bada ghamand tha. Usne kachhue ko daud ki chunauti di. Daud shuru hui toh khargosh bahut aage nikal gaya aur raste mein ek ped ke niche so gaya.</p>
-                    <p>Kachhua bina ruke dheere-dheere chalta raha aur khargosh ke sote hi jeet ki rekha tak pahunch gaya.</p>
-                    <div class="moral-box">💡 Moral (Seekh): Ghamand nahi karna chahiye. Lagataar mehnat karne wala hamesha jeetta hai.</div>
-                `
-            },
-            
-      /*      
-            {
-    icon: "इमोजी (Emoji)",
-    title: "कहानी का नाम",
-    content: `
-        <h3>वेबसाइट पर दिखने वाली मुख्य हेडिंग</h3>
-        <p>कहानी का पहला पैराग्राफ यहाँ लिखा जाएगा जिसमें शुरुआत और मुख्य घटना होगी।</p>
-        <p>कहानी का दूसरा पैराग्राफ यहाँ लिखा जाएगा जिसमें आगे की घटना और अंत होगा।</p>
-        <div class="moral-box">💡 Moral (Seekh): कहानी से मिलने वाली सीख या नैतिक शिक्षा यहाँ लिखी जाएगी।</div>
-    `
-},*/
+                    <h3>Baadshah Abraha aur Haathi ka Waqia (Surah Feel)</h3>
+                    <p>Ek zamane ki baat hai, Yemen ka ek zaalim baadshah Abraha tha. Usne Kaaba Shareef ko girane ke liye ek badi fauj taiyar ki jismein bade-bade haathi bhi the.</p>
+                    
+                    <img src="images/abraha.jpg" alt="Abraha aur Haathi" class="story-img">
 
+                    <p>Lekin jab haathi ne Kaaba ki taraf qadam badhane se inkar kar diya aur Allah ne aasmaan se ababeel parinde bhej kar us fauj ko nakam kar diya...</p>
+                    <div class="moral-box">💡 Sabaq: Allah ki taaqat ke saamne duniya ki koi bhi badi takat nahi tik sakti.</div>
+                    
+                    <div class="shorts-links-box">
+                        <p style="margin: 0 0 8px 0; font-size: 13px; font-weight: bold; color: #1b5e20;">▶ YouTube Shorts Video Dekhein:</p>
+                        <a href="YOUTUBE_SHORT_1_LINK_HERE" target="_blank" class="shorts-btn">Short Part 1</a>
+                        <a href="YOUTUBE_SHORT_2_LINK_HERE" target="_blank" class="shorts-btn">Short Part 2</a>
+                        <p style="margin: 10px 0 0 0; font-size: 12px; color: #333; line-height: 1.4;">
+                            📥 <em>Note: Agar aapko yeh poem ya audio file chahiye, toh YouTube video ke description box mein jakar download kar sakte hain!</em>
+                        </p>
+                    </div>
+                `
+            },
             {
-    icon: "🦊",
-    title: "Chatur Lomdi aur Kachhua",
-    content: `
-        <h3>Chatur Lomdi aur Samajhdar Kachhua</h3>
-        <p>Ek ghane jungle mein ek chalak lomdi rahti thi aur ek shant swabhav ka kachhua jheel ke paas rahta tha. Sukhe ke samay lomdi ne kachhue ko pareshan karna chaha, lekin kachhua bina ghabraye sabhi janwaron ko sath lekar jheel ke beech mein paani ka rasta nikal liya.</p>
-        <p>Sabhi janwaron ki pyas bujh gayi aur lomdi ko samajh aa gaya ki samajhdari aur ekta se hi har mushkil hal hoti hai.</p>
-        <div class="moral-box">💡 Moral (Seekh): Musibat ke samay ghabrane ke bajay samajhdari aur milkar kaam karne se badi se badi mushkil hal ho jati hai.</div>
-    `
-},
+                icon: "💧",
+                title: "Zamzam ka Kuan",
+                content: `
+                    <h3>Hazrat Ismail (a.s.) aur Zamzam ka Waqia</h3>
+                    <p>Jab Hazrat Ibrahim (a.s.) ne Allah ke hukum se apni patni Hazrat Hajra aur bete Hazrat Ismail ko ek sunsaan registaan (Makkah) mein chhod diya tha, tab paani khatam ho gaya. Hazrat Hajra paani ki talaash mein Safa aur Marwa pahadi ke beech daudne lagiin.</p>
+                    
+                    <img src="images/zamzam.jpg" alt="Zamzam Well" class="story-img">
 
-      
-      
-      {
-    icon: "🦊",
-    title: "चतुर लोमड़ी और समझदार सारस",
-    content: `
-        <h3>जंगल की अनोखी दावत</h3>
-        <p>एक सुंदर जंगल में एक चतुर लोमड़ी और एक समझदार सारस रहते थे। एक दिन लोमड़ी ने सारस को अपने घर रात के खाने पर बुलाया। लोमड़ी ने चालाकी दिखाते हुए उथली थाली में पतली सूप परोसी। लोमड़ी तो आसानी से सूप चाट गई, लेकिन सारस अपनी लंबी चोंच के कारण एक घूंट भी नहीं पी सका। सारस बिना कुछ कहे चुपचाप अपने घर चला गया।</p>
-        <p>अगले दिन सारस ने लोमड़ी को अपने घर खाने पर आमंत्रित किया। सारस ने सूप को एक लंबे और पतले मुंह वाले सुराहीदार बर्तन में परोसा। सारस ने अपनी चोंच डालकर मजे से सूप पिया, लेकिन लोमड़ी का मुंह उस बर्तन के अंदर नहीं जा सका। लोमड़ी को अपनी गलती का अहसास हुआ और उसने सारस से माफी मांगी।</p>
-        <div class="moral-box">💡 Moral (Seekh): जैसा व्यवहार आप दूसरों से चाहते हैं, वैसा ही व्यवहार दूसरों के साथ करें (जैसे को तैसा)।</div>
-    `
-}
+                    <p>Allah ne chote Ismail ki edhi ke paas se paani ka chashma (Zamzam) jaari kar diya jo aaj tak jari hai.</p>
+                    <div class="moral-box">💡 Sabaq: Allah par pakka bharosa rakhne walon ki madad zaroor hoti hai.</div>
+                    
+                    <div class="shorts-links-box">
+                        <p style="margin: 0 0 8px 0; font-size: 13px; font-weight: bold; color: #1b5e20;">▶ YouTube Shorts Video Dekhein:</p>
+                        <a href="YOUTUBE_SHORT_1_LINK_HERE" target="_blank" class="shorts-btn">Short Part 1</a>
+                        <a href="YOUTUBE_SHORT_2_LINK_HERE" target="_blank" class="shorts-btn">Short Part 2</a>
+                        <p style="margin: 10px 0 0 0; font-size: 12px; color: #333; line-height: 1.4;">
+                            📥 <em>Note: Agar aapko yeh poem ya audio file chahiye, toh YouTube video ke description box mein jakar download kar sakte hain!</em>
+                        </p>
+                    </div>
+                `
+            },
+            {
+                icon: "🌳",
+                title: "Sacha Sadaqah",
+                content: `
+                    <h3>Imaandari aur Barkat ki Kahani</h3>
+                    <p>Purane waqt mein ek nek kisan tha jo apni fasal ka ek bada hissa gareebon mein baant deta tha. Jab logon ne usse pucha ki tum aisa kyun karte ho, toh usne kaha ki main Allah ki raah mein deta hoon aur badle mein Allah mujhe usse kai guna zyada wapas deta hai.</p>
+                    
+                    <img src="images/sadaqah.jpg" alt="Sacha Sadaqah" class="story-img">
 
-            
+                    <div class="moral-box">💡 Sabaq: Daan karne se maal kam nahi hota balki usme barkat hoti hai.</div>
+                    
+                    <div class="shorts-links-box">
+                        <p style="margin: 0 0 8px 0; font-size: 13px; font-weight: bold; color: #1b5e20;">▶ YouTube Shorts Video Dekhein:</p>
+                        <a href="YOUTUBE_SHORT_1_LINK_HERE" target="_blank" class="shorts-btn">Short Link</a>
+                        <p style="margin: 10px 0 0 0; font-size: 12px; color: #333; line-height: 1.4;">
+                            📥 <em>Note: Agar aapko yeh poem ya audio file chahiye, toh YouTube video ke description box mein jakar download kar sakte hain!</em>
+                        </p>
+                    </div>
+                `
+            }
         ];
 
-        // 1. 2-कॉलम ग्रिड बटन बनाने का लॉजिक
+        // 1. Grid Buttons Banane ka Logic
         function makeButtons() {
             let container = document.getElementById('buttons-container');
             let html = "";
@@ -295,30 +348,46 @@
             container.innerHTML = html;
         }
 
-        // 2. पॉप-अप खोलने का लॉजिक
+        // 2. Modal Open karne ka Logic
         function openModal(index) {
             document.getElementById('story-content').innerHTML = myData[index].content;
             document.getElementById('story-modal').style.display = 'flex';
         }
 
-        // 3. पॉप-अप बंद करने का लॉजिक
+        // 3. Modal Close karne ka Logic
         function closeModal() {
             document.getElementById('story-modal').style.display = 'none';
-            window.speechSynthesis.cancel();
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+            }
         }
 
-        // 4. आवाज़ से सुनाने का लॉजिक
+        // 4. Safe Audio Text Speech Function
         function speakText() {
-            let text = document.getElementById('story-content').innerText;
-            window.speechSynthesis.cancel();
-            
-            let speech = new SpeechSynthesisUtterance(text);
-            speech.lang = 'hi-IN';
-            speech.rate = 0.9;
-            window.speechSynthesis.speak(speech);
+            if ('speechSynthesis' in window) {
+                if (window.speechSynthesis.speaking) {
+                    window.speechSynthesis.cancel();
+                }
+                
+                let contentDiv = document.getElementById('story-content');
+                if (contentDiv) {
+                    let text = contentDiv.innerText;
+                    let speech = new SpeechSynthesisUtterance(text);
+                    speech.lang = 'hi-IN';
+                    speech.rate = 0.9;
+                    
+                    speech.onerror = function(event) {
+                        console.log('Speech error occurred', event);
+                    };
+                    
+                    window.speechSynthesis.speak(speech);
+                }
+            } else {
+                alert('Aapke browser mein ye audio feature support nahi karta.');
+            }
         }
 
-        // पेज चालू होते ही बटन बन जाएँगे
+        // Run function on load
         makeButtons();
     </script>
 
