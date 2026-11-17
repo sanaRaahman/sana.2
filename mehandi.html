@@ -72,7 +72,7 @@
             background-color: #ff9900;
         }
 
-        /* 6 छोटी तस्वीरों की ग्रिड (3-3 के जोड़े में) */
+        /* छोटी तस्वीरों की ग्रिड (3-3 के जोड़े में) */
         .thumbnails-6 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -125,60 +125,57 @@
     <!-- मुख्य डिब्बा जिसमें एक बड़ी फोटो, टाइटल और सेव बटन होगा -->
     <div class="mehandi-grid-box">
         
-        <!-- मुख्य बड़ी तस्वीर (डिफ़ॉल्ट में Front Hand Mehndi3 लगाई है) -->
+        <!-- मुख्य बड़ी तस्वीर (डिफ़ॉल्ट में पहली डिज़ाइन) -->
         <div class="preview-box">
-            <img id="activeMehandi" src="images/Design art/front hand mehndi3.jpg" alt="Front Hand Special Mehandi Design" width="600" height="280">
-            <div class="preview-title" id="activeTitle">Front Hand Special Mehandi</div>
+            <img id="activeMehandi" src="Mehandi/Dulhan design.jpg" alt="Dulhan Design" width="600" height="280">
+            <div class="preview-title" id="activeTitle">Dulhan Design</div>
         </div>
 
         <!-- सेव/डाउनलोड बटन -->
         <div style="margin: 15px 0;">
-            <a id="saveBtn" href="images/Design art/front hand mehndi3.jpg" download class="save-mehandi-btn">
+            <a id="saveBtn" href="Mehandi/Dulhan design.jpg" download class="save-mehandi-btn">
                 📥 Save Mehandi Design
             </a>
         </div>
 
         <p style="font-size: 13px; color: #666; margin-top: 15px;">नीचे दी गई डिज़ाइनों में से किसी पर भी क्लिक करें:</p>
 
-        <!-- स्क्रीनशॉट की नई फाइलों के साथ 6 छोटी तस्वीरें -->
-                <!-- Combined & Clean Mehandi Gallery Grid (No Duplicates) -->
+        <!-- सभी नई मेहंदी इमेजेस की ग्रिड (Lazy Loading के साथ) -->
         <div class="thumbnails-6">
-            <img src="images/Design art/front hand mehndi3.jpg" alt="Front Hand Special Mehandi" loading="lazy" onclick="showBigImage(this, 'Front Hand Special Mehandi')">
-            
-            <img src="images/Design art/jali pattern mehndi design.jpg" alt="Jali Pattern Mehandi Design" loading="lazy" onclick="showBigImage(this, 'Jali Pattern Mehandi Design')">
-
-            <img src="images/Design art/Mandela design.jpg" alt="Mandela Mehandi Masterpiece" loading="lazy" onclick="showBigImage(this, 'Mandela Mehandi Masterpiece')">
-            
-            <img src="images/Design art/back hand mehndi design.jpg" alt="Back Hand Special Design" loading="lazy" onclick="showBigImage(this, 'Back Hand Special Design')">
-            
-            <img src="images/Design art/simple mahandi design.jpg" alt="Simple & Easy Mehandi Art" loading="lazy" onclick="showBigImage(this, 'Simple & Easy Mehandi Art')">
-            
-            <img src="images/Design art/back hand mehndi.png" alt="Classic Henna Design" loading="lazy" onclick="showBigImage(this, 'Classic Henna Design')">
-            
-            <img src="images/Design art/simple-mehndi-1.png" alt="Traditional Mehandi Art" loading="lazy" onclick="showBigImage(this, 'Traditional Mehandi Art')">
-            
-            <img src="images/Design art/mehndi design.jpg" alt="Bridal Special Mehandi" loading="lazy" onclick="showBigImage(this, 'Bridal Special Mehandi')">
-            
-            <img src="images/Design art/back hand mehandi 2.jpg" alt="back hand Special Mehandi" loading="lazy" onclick="showBigImage(this, 'back hands Special Mehandi')">
-            
-            
-            <img src="images/Design art/simple mehndi design1.jpg" alt="back hand Special Mehandi" loading="lazy" onclick="showBigImage(this, 'back hands Special Mehandi')">
-            
-            
-            
-            
+            <img src="Mehandi/Dulhan design.jpg" alt="Dulhan Design" loading="lazy" onclick="showBigImage(this, 'Dulhan Design')">
+            <img src="Mehandi/back Mandela design.jpg" alt="Back Mandela Design" loading="lazy" onclick="showBigImage(this, 'Back Mandela Design')">
+            <img src="Mehandi/back design.jpg" alt="Back Design" loading="lazy" onclick="showBigImage(this, 'Back Design')">
+            <img src="Mehandi/back mehndi 1.jpg" alt="Back Mehndi 1" loading="lazy" onclick="showBigImage(this, 'Back Mehndi 1')">
+            <img src="Mehandi/back mehndi design 2.jpg" alt="Back Mehndi Design 2" loading="lazy" onclick="showBigImage(this, 'Back Mehndi Design 2')">
+            <img src="Mehandi/back mehndi design.jpg" alt="Back Mehndi Design" loading="lazy" onclick="showBigImage(this, 'Back Mehndi Design')">
+            <img src="Mehandi/back mehndi design3.jpg" alt="Back Mehndi Design 3" loading="lazy" onclick="showBigImage(this, 'Back Mehndi Design 3')">
+            <img src="Mehandi/back simple design.jpg" alt="Back Simple Design" loading="lazy" onclick="showBigImage(this, 'Back Simple Design')">
+            <img src="Mehandi/backhand mehandi 1.jpg" alt="Backhand Mehndi 1" loading="lazy" onclick="showBigImage(this, 'Backhand Mehndi 1')">
+            <img src="Mehandi/backhand mehandi 2.jpg" alt="Backhand Mehndi 2" loading="lazy" onclick="showBigImage(this, 'Backhand Mehndi 2')">
+            <img src="Mehandi/backhand mehandi 3.jpg" alt="Backhand Mehndi 3" loading="lazy" onclick="showBigImage(this, 'Backhand Mehndi 3')">
+            <img src="Mehandi/backhand mehandi 4.jpg" alt="Backhand Mehndi 4" loading="lazy" onclick="showBigImage(this, 'Backhand Mehndi 4')">
+            <img src="Mehandi/backhand mehandi 6.jpg" alt="Backhand Mehndi 6" loading="lazy" onclick="showBigImage(this, 'Backhand Mehndi 6')">
+            <img src="Mehandi/easy mehandi design.jpg" alt="Easy Mehndi Design" loading="lazy" onclick="showBigImage(this, 'Easy Mehndi Design')">
+            <img src="Mehandi/flowers mehndi design 2....jpg" alt="Flowers Mehndi Design 2" loading="lazy" onclick="showBigImage(this, 'Flowers Mehndi Design 2')">
+            <img src="Mehandi/flowers mehndi design1....jpg" alt="Flowers Mehndi Design 1" loading="lazy" onclick="showBigImage(this, 'Flowers Mehndi Design 1')">
+            <img src="Mehandi/mehandi7.jpg" alt="Mehndi 7" loading="lazy" onclick="showBigImage(this, 'Mehndi 7')">
+            <img src="Mehandi/mehndi design.jpg" alt="Mehndi Design" loading="lazy" onclick="showBigImage(this, 'Mehndi Design')">
+            <img src="Mehandi/new Mandela design.jpg" alt="New Mandela Design" loading="lazy" onclick="showBigImage(this, 'New Mandela Design')">
+            <img src="Mehandi/pair ki design.jpg" alt="Pair Ki Design" loading="lazy" onclick="showBigImage(this, 'Pair Ki Design')">
+            <img src="Mehandi/simple back hand design....jpg" alt="Simple Back Hand Design" loading="lazy" onclick="showBigImage(this, 'Simple Back Hand Design')">
+            <img src="Mehandi/simple back hand simple....jpg" alt="Simple Back Hand Simple" loading="lazy" onclick="showBigImage(this, 'Simple Back Hand Simple')">
+            <img src="Mehandi/simple design back.jpg" alt="Simple Design Back" loading="lazy" onclick="showBigImage(this, 'Simple Design Back')">
+            <img src="Mehandi/simple design1.jpg" alt="Simple Design 1" loading="lazy" onclick="showBigImage(this, 'Simple Design 1')">
+            <img src="Mehandi/simple pair ke design.jpg" alt="Simple Pair Ke Design" loading="lazy" onclick="showBigImage(this, 'Simple Pair Ke Design')">
+            <img src="Mehandi/simple pair ki design 1.jpg" alt="Simple Pair Ki Design 1" loading="lazy" onclick="showBigImage(this, 'Simple Pair Ki Design 1')">
+            <img src="Mehandi/simple pair ki design.jpg" alt="Simple Pair Ki Design" loading="lazy" onclick="showBigImage(this, 'Simple Pair Ki Design')">
         </div>
-        
-        
-        
-        
-        
 
     </div>
 
     <!-- होम पेज पर लौटने का बटन -->
     <div class="back-home">
-        <a href="index.html">← Go Back to Sana.mall Home</a>
+        <a href="index.html">← Go Back to Home</a>
     </div>
 
     <!-- जावास्क्रिप्ट -->
