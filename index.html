@@ -3,153 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sana's Perspective | Official Digital Library</title>
+    <title>Sana Creator Help</title>
     <meta name="google-site-verification" content="zFnq8cLLNpEBhuHt25BPfxLHZb8_2Re8iQHThepnag4" />
+
     <style>
-        body { 
-            background: gold; 
-            font-family: sans-serif; 
-            text-align: center; 
-            padding: 15px; 
-            margin: 0; 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            padding: 15px;
+            margin: 0;
         }
 
-        .main-box { 
-        background: #ffffff3f; 
-            width: 100%; 
-            max-width: 380px; 
-            margin: 0 auto; 
-            display: flex;                /* Buttons ko side-by-side laane ke liye */
-            flex-wrap: wrap;              /* Do se zyada buttons hone par next line me bhejne ke liye */
-            justify-content: space-between; /* Dono buttons ke beech barabar jagah dene ke liye */
+        .card-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 480px;
+            margin: 20px auto 0 auto;
+            box-sizing: border-box;
         }
 
-        h1 { 
-            color: #fff; 
-            text-shadow:2px 2px 2px blue;
-            text-transform: uppercase; 
-            margin: 15px 0 5px 0; 
-            width: 100%;                  
-        }
-
-        .tagline { 
-            font-style: italic; 
-            text-shadow:2px 2px 2px white;
-            color: #000; 
-            font-weight: bold; 
-            margin-bottom: 20px; 
-             width: 100%;   
-             <!-- agar Main box per Ham display flex lagate Hain to heading of paragraph mein (with )lagana padega -->    
-        }
-
-        .section-title {
-            width: 100%;
-            text-shadow:2px 2px 2px white;
-            color: #981b60;
-            font-size: 20px;
-            font-weight: bold;
-            margin: 35px ;
-            border-bottom: 2px dashed #000;
-            padding-bottom: 9px;
-        }
-
-
-
-
-        .base-btn {
-            display: flex; 
-            justify-content: center; 
-            align-items: center;
-            text-decoration: none; 
-            color: white; 
-            height: 52px;
-            border-radius: 14px; 
-            font-weight: bold; 
-            font-size: 13px;              
-            width: 48%;                   /* Exact 2 buttons per line */
-                 box-sizing: border-box;  
-            box-shadow: 0px 4px 0px rgba(0,0,0,0.2);
-            margin-bottom: 12px;
+        header {
+            max-width: 480px;
+            margin: 0 auto;
             text-align: center;
-            padding: 4px;
-            
-            transition: all 0.2s ease; 
-    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2); /* नॉर्मल हालत में परछाई */
-}
-
-.base-btn:hover {
-    transform: translateY(3px);                  /* बटन 3px नीचे दबेगा */
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);  /* परछाई दबकर 1px रह जाएगी */
-}
-            
-            
-            
-            
-       
-        
-
-        /* Full Width Button */
-        .full-btn {
-            width: 100%;
         }
 
-        /* Category Button Colors */
-        .btn-coding { background:#000000; border:2px solid #333; }
-        .btn-moral { background:#9c27b0; }
-        .btn-horror { background:#2c3e50; }
-        .btn-islam { background:#009432; }
-        .btn-science { background:#007bff; }
-        .btn-history { background:#ffb3ff; color:black; box-shadow:0px 4px 0px blue; }
-        .btn-kanoon { background:#dc3545; }
-        .btn-poem { background:#ff69b4; }
-        .btn-english { background:#ff1493; }
-
-        /* 🔴 YouTube Special Button Style */
-        .btn-yt { 
-            background: #FF0000; 
-            box-shadow: 0px 4px 0px #b30000;
+        .link-input, .script {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            font-family: inherit;
         }
 
-        .footer-box {
+        .btn-process {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
             width: 100%;
-            margin-top: 30px; 
-            font-size: 11px; 
-            color: #777;
+            margin-top: 10px;
+        }
+
+        .btn-process:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+
+        #box {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .beta-note {
+            font-size: 12px;
+            color: #666;
+            margin-top: 12px;
+            background: #f8f9fa;
+            padding: 8px 10px;
+            border-radius: 6px;
+        }
+
+        /* Modal / Pop-up Box Style */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .modal-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 340px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .btn-start {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
-    
-    <div class="main-box">
-        <h1>Sana's Perspective</h1>
-        <p class="tagline">Deen, Science, Itihaas aur Gyan</p>
 
-        
-        
-        <a href="mstories.html" class="base-btn btn-moral">📖 Moral Story</a>
-        
+    <div id="welcome-modal" class="modal-overlay">
+        <div class="modal-card">
+            <h3 style="color: #007bff; margin-top: 0;">Assalamu Alaikum / Hello Creator! 👋</h3>
 
-        
-        
+            <p style="font-size: 13px; color: #333; line-height: 1.5; text-align: left;">
+                <b>Sana Creator Help</b> me aapka swagat hai!<br><br>
 
-        <a href="hindustan.html" class="base-btn btn-history">📜 Sindhu Sabhyata</a>
-        <a href="kanoon.html" class="base-btn btn-kanoon">⚖️ Kanoon</a>
-        
-        <a href="kidspoem.html" class="base-btn btn-poem">📚 Poem Library</a>
-       
-       <a href="na.html" class="base-btn btn-poem"> naat📝 Library</a>
-       
-     
-        
-          <a href="mehandi.html" style="background-color: blue; padding :20px 20px; color:white; border-radius:12px; text-decoration:none; box-shadow: 2px 2px white;">💅mehandi imege 
-        </a>
-        
+                Hum jaante hain ki ek naya channel grow karna kitna mushkil hota hai. Jahan doosre apps pehle din se hi paise maangte hain, hum chahte hain ki aap bina kisi bojh ke <b>Free</b> me apni professional videos banayein aur apna channel monetize karein.<br><br>
 
-        
-        
+                Jab aapka channel successful ho jaye aur aap earning karne lagein, tab aap aage chalkar humari madad kar sakte hain — taaki hum is platform ko aapke aur doosre naye creators ke liye aur behtar bana sakein.<br><br>
 
-        
+                <b>Pehle aapki safalta, baaki sab baad me! Let's grow together! ✨</b>
+            </p>
+
+            <button onclick="closeModal()" class="btn-start">Shuru Karein (Let's Go!)</button>
         </div>
     </div>
+
+    <header>
+        <h1>Sana Creator Help</h1>
+    </header>
+
+    <form id="task-form" class="card-box">
+        <label>
+            YouTube link add karein 👇<br>
+            <input type="text" id="add-link" class="link-input" placeholder="YouTube link yahan paste karein">
+        </label><br><br>
+
+        <label>
+            Kahani yahan likhein 👇<br>
+            <textarea id="khani" class="script" rows="4" placeholder="Yahan apni kahani likhein"></textarea>
+        </label><br>
+
+        <button type="button" id="process-btn" class="btn-process">Process Video (50 Credits)</button>
+    </form>
+
+    <section id="credit-limit" class="card-box">
+        <h2>Aapka Account</h2>
+        <p>Aapke bache hue credits: <span id="amount">100</span></p>
+        <div id="box">Status: Ready for task</div>
+        <div class="beta-note">
+            <strong>Preview Note:</strong> Abhi yeh tool step-by-step tayar ho raha hai; naye features jald hi add kiye jayenge.
+        </div>
+    </section>
+
+    <script>
+        function closeModal() {
+            document.getElementById("welcome-modal").style.display = "none";
+        }
+
+        let userCredits = 100;
+
+        let creditAmount = document.getElementById("amount");
+        let statusBox = document.getElementById("box");
+        let processBtn = document.getElementById("process-btn");
+        let scriptInput = document.getElementById("khani");
+
+        processBtn.addEventListener("click", function() {
+            let scriptText = scriptInput.value;
+            let wordCount = scriptText.trim().split(/\s+/).filter(Boolean).length;
+
+            if (wordCount > 80) {
+                statusBox.innerText = "Status: Script Too Long! (Watch Ad)";
+                alert("Free credits me sirf 80 words (30 sec) ki video process ho sakti hai!");
+                return;
+            }
+
+            if (userCredits >= 50) {
+                userCredits = userCredits - 50;
+                creditAmount.innerText = userCredits;
+                processBtn.disabled = true;
+
+                statusBox.innerText = "Status: Generating AI Voiceover...";
+
+                setTimeout(function() {
+                    statusBox.innerText = "Status: Creating Cartoon Animation...";
+                }, 2000);
+
+                setTimeout(function() {
+                    statusBox.innerText = "Status: Animated Video & Voice Ready! Download Below";
+                    processBtn.disabled = false;
+                }, 4000);
+
+            } else {
+                statusBox.innerText = "Status: Insufficient Credits (Watch Ad/Subscribe)";
+                alert("Credits khatam! Naye credits ke liye Ad dekhein ya Channel Subscribe karein.");
+            }
+        });
+    </script>
 </body>
 </html>
